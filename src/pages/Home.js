@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 import {
 	Fade,
 	Container,
@@ -11,9 +13,9 @@ import {
 	useMediaQuery,
 	useTheme,
 } from '@mui/material';
-import styled from 'styled-components';
 
 const Home = () => {
+	let navigate = useNavigate();
 	return (
 		<Container maxWidth='md'>
 			<Fade in>
@@ -39,13 +41,17 @@ const Home = () => {
 								alignItems='center'
 								spacing={1}>
 								<Grid item>
-									<Logo
-										alt='Logo'
-										src={
-											process.env.PUBLIC_URL +
-											'/assets/images/logo.png'
-										}
-									/>
+									<Stack
+										justifyContent='center'
+										alignItems='center'>
+										<Logo
+											alt='Logo'
+											src={
+												process.env.PUBLIC_URL +
+												'/assets/images/logo.png'
+											}
+										/>
+									</Stack>
 								</Grid>
 								<Grid item>
 									<Typography
@@ -90,8 +96,11 @@ const Home = () => {
 											: '300px',
 									}}>
 									<Button
-										variant='outlined'
+										variant='contained'
 										size='small'
+										onClick={() => {
+											navigate('/dashboard');
+										}}
 										startIcon={
 											<WalletIcon
 												alt='metamask connect wallet'
@@ -104,7 +113,7 @@ const Home = () => {
 										Connect To Metamask
 									</Button>
 									<Button
-										variant='outlined'
+										variant='contained'
 										size='small'
 										startIcon={
 											<WalletIcon

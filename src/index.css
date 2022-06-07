@@ -7,3 +7,14 @@
 	outline: 0;
 	box-sizing: border-box;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all ease-in-out 300ms;
+}
+
+a:hover {
+	color: limegreen;
+}
+
