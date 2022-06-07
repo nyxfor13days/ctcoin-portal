@@ -81,7 +81,13 @@ const Header = () => {
 										direction='row'
 										alignItems='center'
 										sx={{ minWidth: '200px' }}>
-										<ListItemText>Transfer</ListItemText>
+										<ListItemText>
+											<Typography
+												variant='body2'
+												color='primary'>
+												Transfer
+											</Typography>
+										</ListItemText>
 										<DoubleArrowRounded color='primary' />
 									</Stack>
 								</Link>
@@ -93,7 +99,13 @@ const Header = () => {
 										direction='row'
 										alignItems='center'
 										sx={{ minWidth: '200px' }}>
-										<ListItemText>Convert</ListItemText>
+										<ListItemText>
+											<Typography
+												variant='body2'
+												color='primary'>
+												Convert
+											</Typography>
+										</ListItemText>
 										<CompareArrowsRounded color='primary' />
 									</Stack>
 								</Link>
@@ -105,7 +117,13 @@ const Header = () => {
 										direction='row'
 										alignItems='center'
 										sx={{ minWidth: '200px' }}>
-										<ListItemText>Buy</ListItemText>
+										<ListItemText>
+											<Typography
+												variant='body2'
+												color='primary'>
+												Buy
+											</Typography>
+										</ListItemText>
 										<ShoppingCartRounded color='primary' />
 									</Stack>
 								</Link>
@@ -118,7 +136,11 @@ const Header = () => {
 										alignItems='center'
 										sx={{ minWidth: '200px' }}>
 										<ListItemText>
-											NFT Marketplace
+											<Typography
+												variant='body2'
+												color='primary'>
+												NFT Marketplace
+											</Typography>
 										</ListItemText>
 										<CollectionsRounded color='primary' />
 									</Stack>
