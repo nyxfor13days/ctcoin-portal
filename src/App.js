@@ -5,6 +5,7 @@ import { theme } from './theme';
 
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import NotFound from './pages/NotFound';
 
 const App = () => {
 	return (
@@ -21,6 +22,7 @@ const App = () => {
 						path='/nft-marketplace'
 						element={<div>nft-marketplace</div>}
 					/>
+					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</ThemeProvider>
 		</BrowserRouter>
