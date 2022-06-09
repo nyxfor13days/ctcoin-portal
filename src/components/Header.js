@@ -76,7 +76,7 @@ const Header = () => {
 							open={openNavigationMenu}
 							onClose={handleNavigationClose}>
 							<MenuItem onClick={handleNavigationClose}>
-								<Link to='/transfer'>
+								<Link to='/dashboard/transfer'>
 									<Stack
 										direction='row'
 										alignItems='center'

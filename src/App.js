@@ -6,6 +6,7 @@ import { theme } from './theme';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
+import Transfer from './pages/Transfer';
 
 const App = () => {
 	return (
@@ -15,7 +16,7 @@ const App = () => {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/dashboard' element={<Dashboard />} />
-					<Route path='/transfer' element={<div>transfer</div>} />
+					<Route path='/transfer' element={<Transfer />} />
 					<Route path='/convert' element={<div>convert</div>} />
 					<Route path='/buy' element={<div>buy</div>} />
 					<Route
